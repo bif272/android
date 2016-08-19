@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">MQTT Viewer</string>
+
+    <!-- Settings Activity -->
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- About Activity -->
+    <string name="action_about">About</string>
+    <string name="title_activity_about">About</string>
+    <string name="label_company">{CodifyThings}</string>
+    <string name="label_website">www.codifythings.com</string>
+    <string name="label_about">Search our repository of code, tutorials, prototypes and books to get started with your IoT journey</string>
+
+    <!-- 01 - General Settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_app_name">App Name</string>
+    <string name="pref_default_app_name">MQTT Viewer</string>
+    <string name="pref_title_background_color">Background Color</string>
+    <string name="pref_default_background_color">#4286CB</string>
+    <string name="pref_title_text_color">Foreground Color</string>
+    <string name="pref_default_text_color">#FFFFFF</string>
+    <string name="pref_title_highlighter_color">Highlighter Color</string>
+    <string name="pref_default_highlighter_color">#9AC3E5</string>
+
+    <!-- 02 - Server Settings -->
+    <string name="pref_header_server">Server</string>
+
+    <string name="pref_title_mqtt_host">Host</string>
+    <string name="pref_default_mqtt_host">iot.eclipse.org</string>
+    <string name="pref_title_mqtt_port">Port</string>
+    <string name="pref_default_mqtt_port">1883</string>
+    <string name="pref_title_mqtt_topic">Topic</string>
+    <string name="pref_default_mqtt_topic">codifythings/mqtt</string>
+    <string name="pref_title_basic_authentication">Enable Authentication</string>
+    <string name="pref_title_mqtt_username">Username</string>
+    <string name="pref_default_mqtt_username"></string>
+    <string name="pref_title_mqtt_password">Password</string>
+    <string name="pref_default_mqtt_password"></string>
+    <string name="pref_title_mqtt_device">Device</string>
+    <string name="pref_default_mqtt_device">androidClient</string>
+    <string name="pref_title_mqtt_qos">QoS</string>
+    <string name="pref_default_mqtt_qos">0</string>
+    <string-array name="pref_mqtt_qos_titles">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="pref_mqtt_qos_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <!-- 03 - Message Settings -->
+    <string name="pref_header_message">Message</string>
+
+    <string name="pref_title_format">Enable JSON Format</string>
+    <string name="pref_title_data_key">Data Key</string>
+    <string name="pref_default_data_key">key</string>
+    <string name="pref_title_longitude_key">Longitude Key</string>
+    <string name="pref_default_longitude_key">longitude</string>
+    <string name="pref_default_longitude_value">longitude</string>
+    <string name="pref_title_latitude_key">Latitude Key</string>
+    <string name="pref_default_latitude_key">41.83</string>
+    <string name="pref_default_latitude_value">-87.68</string>
+
+    <!-- 04 - Notifications Settings -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_switch_notifications">Enable</string>
+
+    <!-- 05 - Widgets Settings -->
+    <string name="pref_header_widgets">Widgets</string>
+
+    <string name="pref_title_show_icon">Show Icon</string>
+    <string name="pref_title_icon_library">Icon Library</string>
+    <string-array name="pref_icon_library_titles">
+        <item>Font Awesome Icons</item>
+        <item>Weather Icons</item>
+    </string-array>
+    <string-array name="pref_icon_library_values">
+        <item>fontawesome-webfont.ttf</item>
+        <item>weathericons-regular-webfont.ttf</item>
+    </string-array>
+    <string name="pref_default_icon_library">weathericons-regular-webfont.ttf</string>
+    <string name="pref_title_icon_type">Icon Type</string>
+    <string name="pref_default_icon_type">f00d</string>
+
+    <string name="pref_title_show_chart">Show Chart</string>
+    <string name="pref_title_chart_type">Chart Type</string>
+    <string-array name="pref_chart_type_titles">
+        <item>Line Chart</item>
+        <item>Bar Chart</item>
+    </string-array>
+    <string-array name="pref_chart_type_values">
+        <item>Line Chart</item>
+        <item>Bar Chart</item>
+    </string-array>
+    <string name="pref_default_chart_type">Line Chart</string>
+
+    <string name="pref_title_show_map">Show Map</string>
+
+</resources>

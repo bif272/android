@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/backgroundColor"
+    tools:context=".SettingsActivity"
+    tools:showIn="@layout/activity_settings">
+
+    <!-- MQTT Broker -->
+    <TextView
+        android:id="@+id/label_mqtt_broker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textColor="@color/fontColor"
+        android:text="@string/label_mqtt_broker" />
+
+    <EditText
+        android:id="@+id/text_mqtt_broker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/label_mqtt_broker"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:textSize="17sp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <!-- MQTT Port -->
+    <TextView
+        android:id="@+id/label_mqtt_port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_mqtt_broker"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textColor="@color/fontColor"
+        android:text="@string/label_mqtt_port" />
+
+    <EditText
+        android:id="@+id/text_mqtt_port"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/label_mqtt_port"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:textSize="17sp"
+        android:ems="10" >
+    </EditText>
+
+    <!-- MQTT Topic -->
+    <TextView
+        android:id="@+id/label_mqtt_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_mqtt_port"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textColor="@color/fontColor"
+        android:text="@string/label_mqtt_topic" />
+
+    <EditText
+        android:id="@+id/text_mqtt_topic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/label_mqtt_topic"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:textSize="17sp"
+        android:ems="10" >
+    </EditText>
+
+    <!-- Device ID -->
+    <TextView
+        android:id="@+id/label_mqtt_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_mqtt_topic"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textColor="@color/fontColor"
+        android:text="@string/label_mqtt_device" />
+
+    <EditText
+        android:id="@+id/text_mqtt_device"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/label_mqtt_device"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:textSize="17sp"
+        android:ems="10" >
+    </EditText>
+
+    <!-- Mapping Variable -->
+    <TextView
+        android:id="@+id/label_mqtt_mapping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_mqtt_device"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textColor="@color/fontColor"
+        android:text="@string/label_mqtt_mapping" />
+
+    <EditText
+        android:id="@+id/text_mqtt_mapping"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/label_mqtt_mapping"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:textSize="17sp"
+        android:ems="10" >
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_mqtt_mapping"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_button_reset" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_button_save"
+            android:layout_toRightOf="@+id/button_reset"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

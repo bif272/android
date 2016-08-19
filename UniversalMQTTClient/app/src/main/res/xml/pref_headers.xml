@@ -1,0 +1,30 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.codifythings.universalmqttclient.SettingsActivity$GeneralPreferenceFragment"
+        android:icon="@drawable/ic_info"
+        android:title="@string/pref_header_general" />
+
+    <header
+        android:fragment="com.codifythings.universalmqttclient.SettingsActivity$ServerPreferenceFragment"
+        android:icon="@drawable/ic_memory"
+        android:title="@string/pref_header_server" />
+
+    <header
+        android:fragment="com.codifythings.universalmqttclient.SettingsActivity$MessagePreferenceFragment"
+        android:icon="@drawable/ic_message"
+        android:title="@string/pref_header_message" />
+
+    <header
+        android:fragment="com.codifythings.universalmqttclient.SettingsActivity$NotificationPreferenceFragment"
+        android:icon="@drawable/ic_notifications"
+        android:title="@string/pref_header_notifications" />
+
+    <header
+        android:fragment="com.codifythings.universalmqttclient.SettingsActivity$WidgetsPreferenceFragment"
+        android:icon="@drawable/ic_widgets"
+        android:title="@string/pref_header_widgets" />
+
+</preference-headers>

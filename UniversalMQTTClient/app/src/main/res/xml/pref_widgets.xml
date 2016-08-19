@@ -1,0 +1,53 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Icon Preferences -->
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="switch_icon_library"
+        android:title="@string/pref_title_show_icon" />
+
+    <ListPreference
+        android:defaultValue="@string/pref_default_icon_library"
+        android:dependency="switch_icon_library"
+        android:entries="@array/pref_icon_library_titles"
+        android:entryValues="@array/pref_icon_library_values"
+        android:key="list_icon_library"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_icon_library" />
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_icon_type"
+        android:dependency="switch_icon_library"
+        android:key="text_icon_type"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_icon_type" />
+
+    <!-- Historical Chart Preferences -->
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="switch_chart"
+        android:title="@string/pref_title_show_chart" />
+
+    <ListPreference
+        android:defaultValue="@string/pref_default_chart_type"
+        android:dependency="switch_chart"
+        android:entries="@array/pref_chart_type_titles"
+        android:entryValues="@array/pref_chart_type_values"
+        android:key="list_chart"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_chart_type" />
+
+    <!-- Map Preferences -->
+    <!-- DISABLED FOR RELEASE 1.0 -->
+    <!--<SwitchPreference-->
+        <!--android:defaultValue="false"-->
+        <!--android:key="switch_map"-->
+        <!--android:title="@string/pref_title_show_map" />-->
+
+</PreferenceScreen>

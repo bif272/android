@@ -1,0 +1,44 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- General Preferences -->
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_app_name"
+        android:key="text_app_name"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_app_name" />
+
+    <EditTextPreference
+        android:capitalize="characters"
+        android:defaultValue="@string/pref_default_background_color"
+        android:inputType="textCapCharacters"
+        android:key="text_background_color"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_background_color" />
+
+    <EditTextPreference
+        android:capitalize="characters"
+        android:defaultValue="@string/pref_default_text_color"
+        android:inputType="textCapCharacters"
+        android:key="text_text_color"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_text_color" />
+
+    <EditTextPreference
+        android:capitalize="characters"
+        android:defaultValue="@string/pref_default_highlighter_color"
+        android:inputType="textCapCharacters"
+        android:key="text_highlighter_color"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_highlighter_color" />
+
+</PreferenceScreen>

@@ -1,0 +1,71 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Server Preferences -->
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_mqtt_host"
+        android:key="text_mqtt_host"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_mqtt_host" />
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_mqtt_port"
+        android:key="text_mqtt_port"
+        android:inputType="number|none"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_mqtt_port" />
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_mqtt_topic"
+        android:key="text_mqtt_topic"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_mqtt_topic" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switch_basic_authentication"
+        android:title="@string/pref_title_basic_authentication" />
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_mqtt_username"
+        android:key="text_mqtt_username"
+        android:dependency="switch_basic_authentication"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_mqtt_username" />
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_mqtt_password"
+        android:key="text_mqtt_password"
+        android:dependency="switch_basic_authentication"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_mqtt_password" />
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_mqtt_device"
+        android:key="text_mqtt_device"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_mqtt_device" />
+
+    <!-- DISABLED IN RELEASE 1.2 -->
+    <!--<ListPreference-->
+        <!--android:defaultValue="@string/pref_default_mqtt_qos"-->
+        <!--android:entries="@array/pref_mqtt_qos_titles"-->
+        <!--android:entryValues="@array/pref_mqtt_qos_values"-->
+        <!--android:key="list_mqtt_qos"-->
+        <!--android:negativeButtonText="@null"-->
+        <!--android:positiveButtonText="@null"-->
+        <!--android:title="@string/pref_title_mqtt_qos" />-->
+
+</PreferenceScreen>
